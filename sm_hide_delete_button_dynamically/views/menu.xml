@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_sm_hide_delete_root" name="Hide Delete Button" sequence="65" groups="sm_hide_delete_button_dynamically.group_sm_hide_delete_user"/>
+    <menuitem id="menu_sm_hide_delete_configuration" name="Configuration" parent="menu_sm_hide_delete_root" sequence="10" groups="sm_hide_delete_button_dynamically.group_sm_hide_delete_manager"/>
+    <menuitem id="menu_sm_hide_delete_rules" name="Rules" parent="menu_sm_hide_delete_configuration" action="action_sm_hide_delete_rule" sequence="10"/>
+</odoo>

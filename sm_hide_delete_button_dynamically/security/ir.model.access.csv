@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sm_hide_delete_rule_internal,sm.hide.delete.rule.internal,model_sm_hide_delete_rule,base.group_user,1,0,0,0
+access_sm_hide_delete_rule_user,sm.hide.delete.rule.user,model_sm_hide_delete_rule,group_sm_hide_delete_user,1,0,0,0
+access_sm_hide_delete_rule_manager,sm.hide.delete.rule.manager,model_sm_hide_delete_rule,group_sm_hide_delete_manager,1,1,1,1
