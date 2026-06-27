@@ -40,9 +40,6 @@
                 <field name="group_ids"/>
                 <filter name="active" string="Active" domain="[('active', '=', True)]"/>
                 <filter name="inactive" string="Inactive" domain="[('active', '=', False)]"/>
-                <group expand="0" string="Group By">
-                    <filter name="group_model" string="Model" context="{'group_by': 'model_id'}"/>
-                </group>
             </search>
         </field>
     </record>
