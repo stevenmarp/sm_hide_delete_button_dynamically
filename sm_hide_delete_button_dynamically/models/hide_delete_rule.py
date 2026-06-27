@@ -24,7 +24,8 @@ class SmHideDeleteRule(models.Model):
         rules = self.sudo().search([("active", "=", True), ("model_name", "=", model_name)])
         if not rules:
             return False
-        user_group_ids = set(self.env.user.groups_id.ids)
+        group_field = "groups_id" if "groups_id" in self.env.user._fields else "all_group_ids"
+        user_group_ids = set(self.env.user[group_field].ids)
         for rule in rules:
             if not rule.group_ids or user_group_ids.intersection(rule.group_ids.ids):
                 return True
